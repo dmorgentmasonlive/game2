@@ -131,11 +131,6 @@ function update() {
     player.body.velocity.y = 0;
     player2.body.velocity.x = 0;
     player2.body.velocity.y = 0;
-
-    if(dash.shift.isDown && attack1 == true)
-    {
-        attack1 = false;
-    }
     
     if (cursors.left.isDown)
     {
@@ -169,7 +164,6 @@ function update() {
     if (cursors.up.isDown)
     {
         player.body.velocity.y = -300;
-        player.frame = 3;
     }
     
     if(cursors.down.isDown)
